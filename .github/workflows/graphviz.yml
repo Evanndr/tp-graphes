@@ -12,11 +12,11 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y graphviz
 
       - name: Lancement graphviz
-        run: cd tp-graphes/ && bash run1.sh g4
+        run: bash run1.sh g4
 
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
           name: Images
-          path: tp-graphes/g4.svg
+          path: g4.svg
 
