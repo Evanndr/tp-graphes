@@ -12,11 +12,11 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y graphviz
 
       - name: Lancement graphviz
-        run: bash run1.sh g4
+        run: bash run2.sh
 
       - name: upload du resultat
         uses: actions/upload-artifact@v4
         with:
           name: Images
-          path: g4.svg
+          path: *.svg
 
