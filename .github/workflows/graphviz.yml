@@ -18,7 +18,7 @@ jobs:
       - run: cat g4.svg
 
       - name: upload du resultat
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v4
         with:
           name: Images
           path: "*.svg"
