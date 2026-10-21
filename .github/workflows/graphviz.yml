@@ -8,13 +8,13 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
 
-      - name: Installation de graphviz
+      - name: Installation de graphviz et de ses plugins
         run: |
           sudo apt-get update
           sudo apt-get install -y graphviz libgraphviz-dev
 
       - name: Lancement graphviz
-        run: ./run2.sh
+        run: chmod +x run2.sh && ./run2.sh
 
       - run: ls -l
       - run: cat g4.svg
@@ -24,4 +24,3 @@ jobs:
         with:
           name: Images
           path: "*.svg"
-
