@@ -1,5 +1,5 @@
+./get-artifacts2.sh
 jq '.artifacts[].id' gh-artifacts.json > liste-id.txt
-
 
 for a in $(cat liste-id.txt); do
 echo $a
