@@ -1,5 +1,5 @@
 digraph {
-    node [shape=none, image="/icon_router.png", width="0.7", height="0.5", fixedsize=true, imagescale=true, labelloc=b, fontsize="10pt"];
+    node [shape=none, image="icon_router.png", width="0.7", height="0.5", fixedsize=true, imagescale=true, labelloc=b, fontsize="10pt"];
     edge [fontsize="12pt", color="gray40", len=1.5];
 
 
